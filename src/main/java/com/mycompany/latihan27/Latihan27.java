@@ -32,12 +32,13 @@ public class Latihan27 {
             System.out.println("HurufBesar = " +kalimatBesar);
             System.out.println("HurufKecil = " +kalimatKecil);
             
-            System.out.println("\nUlangi Program? (ya/tidak)");
-            String ulang = input.next();
-            if(ulang == "ya"){
-                System.out.println("Program akan diulangi");
-            }else if(ulang == "tidak"){
-                System.out.println("Program berhenti terimakasih");
+            System.out.print("ulangi aktifitas? (ya/tidak)");
+            String aktifitas = input.next().toUpperCase();                                
+            
+            if(aktifitas.equals("YA")){
+                System.out.print("Program akan diulangi\n");                
+            } else if(aktifitas.equals("TIDAK")){
+                System.out.print("Program Berhenti Terimakasih\n");
                 ulangi = false;
             }
         }
